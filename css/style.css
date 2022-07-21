@@ -159,8 +159,17 @@ a {
     height: 40px;
 }
 
+.icon--small{
+    width: 30px;
+    height: 30px;
+}
+
 .icon--primary{
     fill: var(--color-primary);
+}
+
+.icon--white{
+    fill: white;
 }
 
 .icon-container{
@@ -171,6 +180,10 @@ a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+.icon-container--accent{
+    background-color: var(--color-accent);
 }
 
 /* Buttons */
@@ -277,7 +290,8 @@ a {
 .card{
     border-radius: 7px;
     box-shadow: 0 0 20px 10px #f3f3f3;
-    overflow: hidden; /* to retain border radius as overflow happened when we added background-color. */
+    overflow: hidden;
+        /* to retain border radius as overflow happened when we added background-color. */
 }
 
 .card__header, .card__body{
@@ -436,6 +450,45 @@ a {
     }
 }
 
+/* Testimonial */
+.testimonial{
+    padding:3rem;
+}
+
+.testimonial .grid{
+    align-items: center;
+}
+
+.testimonial__image{
+    position: relative;
+    
+}
+
+.testimonial__image > img{
+    width: 100%;
+}
+
+.testimonial__image > .icon-container{
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+
+}
+
+.card.testimonial{
+    overflow: visible;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial .quote, .testimonial .quote__author{
+        font-size: 2.4rem;
+    }
+    
+    .testimonial .quote{
+        margin-left: 6rem;
+        margin-right: 0;
+    }
+}
 
 
 
