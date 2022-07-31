@@ -1,7 +1,7 @@
-#☁ Cloudify
+# ☁ Cloudify
 Cloudify is a company that will make your website go live for only $9.  
  
-###👨‍💻Technologies used:
+### 👨‍💻Technologies used:
 - HTML
 - CSS
 - JS
